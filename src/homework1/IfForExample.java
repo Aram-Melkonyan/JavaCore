@@ -13,14 +13,12 @@ public class IfForExample {
         for (int i = a; i <= b; i++) {
             System.out.print(i + ",");
         }
-
         System.out.println();
         if (a == b) {
             System.out.println("a հավասար է b ին ");
         } else {
             System.out.println("a հավասար չէ b ին ");
         }
-
         char c = (char) a;
         char f = (char) b;
         System.out.println(c + " , " + f);
