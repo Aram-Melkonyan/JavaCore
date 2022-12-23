@@ -6,8 +6,6 @@ public class IfForExample {
         a = 15;
         b = 30;
         for (int i = a; i <= b; i++) {
-
-
             if (i == b) {
                 System.out.println("max " + i);
             }
