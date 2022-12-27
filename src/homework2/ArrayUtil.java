@@ -21,8 +21,36 @@ public class ArrayUtil {
             }
         }
         System.out.println("min " + min);
+        System.out.print("Զույգ թվեր : ");
+        int a = 0;
+        int b = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 == 0) {
+                a++;
+                System.out.print(numbers[i] + " ");
+            }
+        }
+        System.out.println();
+        System.out.print("Զույգերի քանակը = " + a);
+        System.out.println();
+        System.out.print("Կենտ թվեր ");
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 == 1) {
+                b++;
+                System.out.print(numbers[i] + " ");
+            }
+        }
+        System.out.println();
+        System.out.println("Կենտ թվերի քանակը = " + b);
+        int c = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            c += numbers[i];
+        }
+        System.out.println("մասիվի էլեմենտների գումարը = " + c);
+        System.out.println("մասիվի բոլոր թվերի միջին թվաբանականը = " + c / numbers.length);
+        System.out.println(numbers[0]);
+        System.out.println(numbers.length - 1);
     }
-
 }
 
 
