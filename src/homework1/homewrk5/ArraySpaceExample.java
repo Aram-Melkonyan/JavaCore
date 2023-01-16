@@ -2,14 +2,33 @@ package homework1.homewrk5;
 
 public class ArraySpaceExample {
     public static void main(String[] args) {
-        int i;
-        char[] result = new char[9];
         char[] spaceArray = {' ', 'c', 'a', 't', ' ', 'b', 'i', ' ', 'b', ' ', ' '};
-        for (i = 1; i < spaceArray.length - 2; i++) {
-            result[result.length - 1] = spaceArray[i];
-            System.out.print(result[result.length - 1]);
+        int startIndex = 0;
+        int endIndex = spaceArray.length - 1;
+        for (int i = 0; i < spaceArray.length; i++) {
+            if (spaceArray[i] == ' ') {
+                startIndex++;
+            } else {
+                break;
+            }
+        }
+        for (int i = endIndex; i >= 0; i--) {
+            if (spaceArray[i] == ' ') {
+                endIndex--;
+            } else {
+                break;
+            }
+        }
+        char[] result = new char[(endIndex - startIndex) + 1];
+        int j = 0;
+        for (int i = startIndex; i <= endIndex; i++) {
+            result[j++] = spaceArray[i];
+        }
+        for (char c : result) {
+            System.out.print(c);
         }
     }
 }
+
 
 

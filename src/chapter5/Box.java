@@ -5,6 +5,14 @@ public class Box {
     double height;
     double depth;
 
+    Box() {
+        System.out.println(" конструирование объекта Box ");
+        width = 10;
+        depth = 10;
+        height = 10;
+
+    }
+
     double volume() {
         return width * height * depth;
     }
