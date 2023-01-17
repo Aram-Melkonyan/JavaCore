@@ -11,7 +11,7 @@ public class Calculator {
     }
 
     double divide(double a, double b) {
-        if (a / b == 0) {
+        if ( b == 0) {
             System.out.println(" թիվը 0 ի չի բաժանվում ");
             return -1;
         }
