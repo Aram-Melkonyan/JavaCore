@@ -28,7 +28,7 @@ public class ArraySpaceExample {
             System.out.print(c);
         }
     }
-}
 
+}
 
 
