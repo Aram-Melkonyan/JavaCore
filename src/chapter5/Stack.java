@@ -1,24 +1,23 @@
 package chapter5;
 
 public class Stack {
-    int stck[] = new int[10];
-    int tos;
+    private int stck[] = new int[10];
+    private int tos;
 
-    Stack() {
+    public Stack() {
         tos = -1;
     }
 
-    void push(int item) {
+    public void push(int item) {
         if (tos == 9) {
             System.out.println(" stek zapolnen");
         } else stck[++tos] = item;
     }
 
-    int pop() {
+    public int pop() {
         if (tos < 0) {
             System.out.println("stek ne zagrujen ");
             return 0;
-        }
-        else return stck[tos--];
+        } else return stck[tos--];
     }
 }
