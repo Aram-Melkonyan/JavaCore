@@ -34,7 +34,7 @@ public class EmployeeStorage {
         boolean found = false;
         for (int i = 0; i < size; i++) {
             Employee employee = array[i];
-            if (employee.getName().contains(names)) {
+            if (employee.getEmployeeID().contains(names)) {
                 found = true;
                 System.out.println(employee);
             }
@@ -49,7 +49,7 @@ public class EmployeeStorage {
         boolean found = false;
         for (int i = 0; i < size; i++) {
             Employee employee = array[i];
-            if (employee.getName().contains(companyName)) {
+            if (employee.getCompany().contains(companyName)) {
                 found = true;
                 System.out.println(employee);
             }

@@ -29,7 +29,7 @@ public class EmployeeDemo {
                     String employeeID = scanner.nextLine();
                     System.out.println("Please input for company");
                     String company = scanner.nextLine();
-                    Employee employee = new Employee();
+                    Employee employee = new Employee(name,surname,employeeID,company);
                     employeeStorage.add(employee);
                     break;
                 case "2":
